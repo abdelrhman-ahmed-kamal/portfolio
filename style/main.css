@@ -542,8 +542,8 @@ ul {
   flex-wrap: wrap;
   gap: 2px;
 }
-.section-skills .skills.container {
-  padding: 0 6rem; 
+.skills.container {
+    padding: 0 6rem;
 }
 .skills .card {
   background-color: #fff;
