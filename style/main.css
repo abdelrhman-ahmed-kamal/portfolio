@@ -543,7 +543,7 @@ ul {
   gap: 2px;
 }
 .skills.container {
-    padding: 0 6rem;
+  padding: 0 6rem;
 }
 .skills .card {
   background-color: #fff;
@@ -718,7 +718,7 @@ ul {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     overflow: hidden;
-    padding-bottom: 3.2rem;
+    padding-bottom: 6.4rem;
   }
   .project-box .project-box-text {
     padding: 3.2rem;
@@ -750,6 +750,9 @@ ul {
 @media (max-width: 360px) {
   .section-projects .projects .project-box .live-demo {
     margin-right: 2rem;
+  }
+  .section-projects .projects .project-box {
+    padding-bottom: 4.8rem;
   }
 }
 
