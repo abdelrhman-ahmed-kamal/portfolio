@@ -755,6 +755,21 @@ ul {
     padding-bottom: 4.8rem;
   }
 }
+.projects .html {
+  color: #f75421;
+}
+.projects .css {
+  color: #2091eb;
+}
+.projects .js {
+  color: #ebd00b;
+}
+.projects .sass {
+  color: #c96195;
+}
+.projects .react {
+  color: #5ed3f3;
+}
 
 /**************************************************************************/
 /**                                   Contact                             **/
