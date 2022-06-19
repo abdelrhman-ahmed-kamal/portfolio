@@ -114,7 +114,7 @@ ul {
   outline: none;
 }
 *::selection {
-  background-color: #adb5bd8c;
+  background-color: #868e96;
   color: #fff;
 }
 
@@ -451,7 +451,7 @@ ul {
 /**************************************************************************/
 
 .section-about {
-  background-color: #4dd3c7;
+  background-color: var(--main-color);
   position: relative;
 }
 .about {
@@ -521,7 +521,7 @@ ul {
   position: absolute;
   width: 105%;
   height: 300px;
-  background-color: #4dd3c7;
+  background-color: var(--main-color);
   bottom: -66px;
   left: 0px;
   z-index: -1;
@@ -727,7 +727,7 @@ ul {
     order: 1;
   } */
 
-  .section-projects .project-box:nth-child(even) .project-box-text {
+  .section-projects .project-box:nth-child(odd) .project-box-text {
     order: 2;
   }
   .section-projects .projects .project-box img {
