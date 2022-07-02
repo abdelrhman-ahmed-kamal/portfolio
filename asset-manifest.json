@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5b8bf22c.css",
+    "main.js": "/static/js/main.bd897a32.js",
+    "static/media/Kasper.png": "/static/media/Kasper.bec0c5bf40f261cb7b1a.png",
+    "static/media/CV-website.png": "/static/media/CV-website.00b2639a3e5cafa15e68.png",
+    "static/media/Leon.png": "/static/media/Leon.358773cedf3b743bfba1.png",
+    "static/media/Omnifood.png": "/static/media/Omnifood.10c9b42bb71df1e08054.png",
+    "static/media/forkify.png": "/static/media/forkify.a16a9e68b48295cde88a.png",
+    "static/media/mapty.png": "/static/media/mapty.6516d959aa8f5ad253cf.png",
+    "static/media/Pig-Game.png": "/static/media/Pig-Game.5c19415bb30798ddd10c.png",
+    "static/media/bankist-website.png": "/static/media/bankist-website.fa1c17f065c8066c9920.png",
+    "static/media/passwords.png": "/static/media/passwords.42920f0e6b72d5e80006.png",
+    "static/media/Bankist.png": "/static/media/Bankist.cb36f0049414e97823ce.png",
+    "static/media/email.png": "/static/media/email.dee95624eea450817282.png",
+    "static/media/special.jpg": "/static/media/special.b8607a064a1256ecfe79.jpg",
+    "static/media/download1.png": "/static/media/download1.5ce389421b6b45f92c79.png",
+    "static/media/expenses.png": "/static/media/expenses.8b1bcf61ee54b101be75.png",
+    "static/media/quotes.png": "/static/media/quotes.fef7bbdc735f703c1c86.png",
+    "static/media/redux.png": "/static/media/redux.c9be37e0fece29c624b0.png",
+    "static/media/sass.png": "/static/media/sass.36e863bfbcb25c109d00.png",
+    "static/media/node.png": "/static/media/node.8683d89cf78ffae3d1f7.png",
+    "static/media/mobile.png": "/static/media/mobile.145d9ce0157a56f8fcd8.png",
+    "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
+    "static/media/firebase.png": "/static/media/firebase.a4156cb67d6d0676cffc.png",
+    "index.html": "/index.html",
+    "main.5b8bf22c.css.map": "/static/css/main.5b8bf22c.css.map",
+    "main.bd897a32.js.map": "/static/js/main.bd897a32.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b8bf22c.css",
+    "static/js/main.bd897a32.js"
+  ]
+}
