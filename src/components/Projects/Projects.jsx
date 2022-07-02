@@ -60,9 +60,9 @@ const Projects = () => {
       title: "Passwords app",
       description: "A simple app that allows you to manage your passwords",
       projectLink:
-        "https://abdelrhman-ahmed-kamal.github.io/password-manager-app/",
+        "https://abdelrhman-ahmed-kamal.github.io/passwords-manager-app/",
       codeLink:
-        "https://github.com/abdelrhman-ahmed-kamal/password-manager-app/",
+        "https://github.com/abdelrhman-ahmed-kamal/passwords-manager-app/",
       img: passwords,
       tags: ["React", "ALL"],
     },
