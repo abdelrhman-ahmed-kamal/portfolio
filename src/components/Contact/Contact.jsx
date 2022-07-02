@@ -2,18 +2,58 @@ import "./Contact.scss";
 import { useRef, useState } from "react";
 import SectionTitle from "../UI/SectionTitle";
 
+import emailjs from "@emailjs/browser";
+
 import emailLogo from "../../assets/logos/email.png";
 import mobile from "../../assets/logos/mobile.png";
 
 import { motion } from "framer-motion";
+
 const Contact = () => {
+  const form = useRef();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoadingResults, setIsLLoadingResults] = useState(false);
+
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    user_name: "",
+    user_email: "",
     message: "",
   });
 
-  const { name, email, message } = formData;
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setIsLLoadingResults(true);
+
+    setIsLLoadingResults(true);
+
+    emailjs
+      .sendForm(
+        "service_puspxyl",
+        "template_6md1zc9",
+        form.current,
+        "cw_Ah7RVI9N0-s0GM"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    setTimeout(() => {
+      setIsLLoadingResults(false);
+      setIsSubmitted(true);
+      setFormData({
+        user_name: "",
+        user_email: "",
+        message: "",
+      });
+    }, 3000);
+  };
+
+  const { user_name, user_email, message } = formData;
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
@@ -21,15 +61,6 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
-  };
   return (
     <>
       <SectionTitle>Contact me</SectionTitle>
@@ -37,7 +68,10 @@ const Contact = () => {
         <div className="app__footer-cards">
           <div className="app__footer-card">
             <img src={emailLogo} alt="email" />
-            <a href="mailto:abdelrhman.contact@gmail.com">
+            <a
+              className="contact__email-link"
+              href="mailto:abdelrhman.contact@gmail.com"
+            >
               abdelrhman.contact@gmail.com
             </a>
           </div>
@@ -47,25 +81,29 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="app__footer-form app__flex">
+        <form
+          ref={form}
+          className="app__footer-form app__flex"
+          onSubmit={sendEmail}
+        >
           <div className="app__flex">
             <input
               onChange={handleChangeInput}
               type="text"
               placeholder="Your Name"
-              required={true}
-              name="name"
-              value={name}
+              required
+              name="user_name"
+              value={user_name}
             />
           </div>
           <div className="app__flex">
             <input
-              value={email}
+              value={user_email}
               onChange={handleChangeInput}
               type="email"
               placeholder="Your email"
-              required={true}
-              name="email"
+              required
+              name="user_email"
             />
           </div>
           <div>
@@ -74,13 +112,19 @@ const Contact = () => {
               value={message}
               placeholder="Your Message"
               name="message"
-              required={true}
+              required
             ></textarea>
           </div>
-          <button type="submit" onClick={submitHandler}>
-            Send Message
-          </button>
-        </div>
+          {isSubmitted ? (
+            <p className="contact-success-message">
+              Your message has been successfully sent. I will contact you soon.
+            </p>
+          ) : (
+            <button type="submit">
+              {isLoadingResults ? "Sending.." : "Send Message"}
+            </button>
+          )}
+        </form>
       </div>
     </>
   );

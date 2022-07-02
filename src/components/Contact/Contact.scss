@@ -61,18 +61,27 @@
       text-decoration: none;
       font-weight: 500;
       color: #333;
+      @media (max-width: 600px) {
+        font-size: 14px;
+      }
     }
     &:hover {
       box-shadow: 0 0 25px #fef4f5;
+      @media (max-width: 776px) {
+        box-shadow: 0 0 15px #fef4f5;
+      }
+      @media (max-width: 600px) {
+        box-shadow: 0 0 10px #fef4f5;
+      }
     }
 
     @media screen and (max-width: 776px) {
-      width: 100%;
+      width: 96%;
     }
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 96%;
   }
 }
 
@@ -82,18 +91,24 @@
 
 .app__footer-cards .app__footer-card:last-child:hover {
   box-shadow: 0 0 25px #f2f7fb;
+  @media (max-width: 776px) {
+    box-shadow: 0 0 15px #f2f7fb;
+  }
+  @media (max-width: 600px) {
+    box-shadow: 0 0 10px #f2f7fb;
+  }
 }
 
 .app__footer-form {
   width: 70%;
   @media (max-width: 600px) {
-    width: 100%;
+    width: 96%;
   }
   flex-direction: column;
   margin: 1rem 2rem;
 
   div {
-    width: 100%;
+    width: 96%;
 
     margin: 0.75rem 0;
     border-radius: 10px;
@@ -104,7 +119,7 @@
 
     input,
     textarea {
-      width: 100%;
+      width: 96%;
       padding: 0.95rem;
       border: none;
       border-radius: 7px;
@@ -121,6 +136,12 @@
 
     &:hover {
       box-shadow: 0 0 25px var(--primary-color);
+      @media (max-width: 776px) {
+        box-shadow: 0 0 15px var(--primary-color);
+      }
+      @media (max-width: 600px) {
+        box-shadow: 0 0 10px var(--primary-color);
+      }
     }
   }
 
@@ -146,6 +167,10 @@
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
+  }
+  .contact-success-message {
+    margin: 4rem 0 0 0;
+    color: #fff;
   }
 
   @media screen and (max-width: 768px) {
