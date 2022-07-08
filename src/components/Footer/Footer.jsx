@@ -1,5 +1,5 @@
 import "./Footer.scss";
-
+import footerLogo from "../../assets/logos/footer-logo.svg"
 import {
   BsFacebook,
   BsGithub,
@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="container">
           <div className="logo">
             <img
-              src="https://coryhughart.com/wp-content/themes/boldlygo/img/ch_logo_light.svg"
+              src={footerLogo}
               alt="logo"
             />
           </div>
