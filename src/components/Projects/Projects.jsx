@@ -15,7 +15,6 @@ import mapty from "../../assets/projects-images/mapty.png";
 import kasper from "../../assets/projects-images/Kasper.png";
 import expenses from "../../assets/projects-images/expenses.png";
 import passwords from "../../assets/projects-images/passwords.png";
-import quotes from "../../assets/projects-images/quotes.png";
 import leon from "../../assets/projects-images/Leon.png";
 
 const Projects = () => {
@@ -85,18 +84,9 @@ const Projects = () => {
     {
       title: "expenses app",
       description: "A simple app that allows you to track your expenses",
-      projectLink: "https://abdelrhman-ahmed-kamal.github.io/expenses-app/",
+      projectLink: "https://abdelrahman-expenses-app.netlify.app",
       codeLink: "https://github.com/abdelrhman-ahmed-kamal/expenses-app/",
       img: expenses,
-      tags: ["React", "ALL"],
-    },
-    {
-      title: "quotes app",
-      description:
-        "A simple app allows you to write down your quotes and save it",
-      projectLink: "https://abdelrhman-ahmed-kamal.github.io/quotes-app/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/quotes-app/",
-      img: quotes,
       tags: ["React", "ALL"],
     },
 
