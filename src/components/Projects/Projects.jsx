@@ -81,14 +81,6 @@ const Projects = () => {
       img: bankistWebsite,
       tags: ["JavaScript", "ALL"],
     },
-    {
-      title: "expenses app",
-      description: "A simple app that allows you to track your expenses",
-      projectLink: "https://abdelrahman-expenses-app.netlify.app",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/expenses-app/",
-      img: expenses,
-      tags: ["React", "ALL"],
-    },
 
     {
       title: "pig game",
